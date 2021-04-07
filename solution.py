@@ -38,7 +38,7 @@ class RandomAgent:
         logger.info("received", data=data)
         camera: JPGImage = data.camera
         odometry = data.odometry
-        print(odometry)
+        # print(odometry)
         _rgb = jpg2rgb(camera.jpg_data)
 
     def on_received_get_commands(self, context: Context, data: GetCommands):
